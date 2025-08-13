@@ -5,7 +5,7 @@ export default function Socials() {
   return (
     <div className="flex gap-2">
       <a
-        href="https://instagram.com/"
+        href="https://instagram.com/arunnats/?hl=en"
         target="_blank"
         rel="noopener noreferrer"
         className="h-5 w-5 rounded-full bg-cyan-400 flex items-center justify-center text-white hover:opacity-80 transition"
@@ -14,7 +14,7 @@ export default function Socials() {
       </a>
 
       <a
-        href="https://substack.com/"
+        href="https://arunnats.substack.com//"
         target="_blank"
         rel="noopener noreferrer"
         className="h-5 w-5 rounded-full bg-pink-400 flex items-center justify-center text-white hover:opacity-80 transition"
@@ -23,7 +23,7 @@ export default function Socials() {
       </a>
 
       <a
-        href="https://github.com/"
+        href="https://github.com/arunnats/"
         target="_blank"
         rel="noopener noreferrer"
         className="h-5 w-5 rounded-full bg-yellow-400 flex items-center justify-center text-black hover:opacity-80 transition"
@@ -32,7 +32,7 @@ export default function Socials() {
       </a>
 
       <a
-        href="https://linkedin.com/"
+        href="https://www.linkedin.com/in/arunnats/"
         target="_blank"
         rel="noopener noreferrer"
         className="h-5 w-5 rounded-full bg-black flex items-center justify-center text-white hover:opacity-80 transition"

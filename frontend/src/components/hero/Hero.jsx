@@ -1,17 +1,21 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Hero() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="relative pt-[3vh] items-center justify-center h-full flex flex-col">
         <h1 className="text-gray-700 text-[7rem] font-bold font-patrick drop-shadow-lg">
           the wall
         </h1>
-        <a href="">
+        <button onClick={() => navigate("/submit")}>
           <img
             className="h-[20vw] md:h-[6vw] mt-1"
             src="/submitButton.svg"
             alt=""
           />
-        </a>
+        </button>
         <img
           className="absolute h-[15vh] md:h-[18vw] left-0 md:left-72 top-40 md:top-0 rotate-[6deg]"
           src="/gatto.svg"

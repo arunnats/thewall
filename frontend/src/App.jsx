@@ -1,5 +1,7 @@
+import { useState, useEffect } from "react";
 import Hero from "./components/hero/Hero";
 import Card from "./components/card/Card";
+import LongCard from "./components/card/LongCard";
 
 const cardsData = [
   {
@@ -30,13 +32,37 @@ const cardsData = [
 ];
 
 export default function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <div className="relative h-screen w-screen">
       <Hero />
-      <div className="flex flex-wrap justify-center w-full mx-auto mt-3">
-        {cardsData.map((card, index) => (
-          <Card key={index} text={card.text} rec={card.rec} date={card.date} />
-        ))}
+      <div className="flex flex-wrap justify-center w-full mx-auto mt-10 md:mt-3">
+        {cardsData.map((card, index) =>
+          isMobile ? (
+            <LongCard
+              key={index}
+              text={card.text}
+              rec={card.rec}
+              date={card.date}
+            />
+          ) : (
+            <Card
+              key={index}
+              text={card.text}
+              rec={card.rec}
+              date={card.date}
+            />
+          )
+        )}
       </div>
     </div>
   );
