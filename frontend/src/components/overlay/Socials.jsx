@@ -14,7 +14,7 @@ export default function Socials() {
       </a>
 
       <a
-        href="https://arunnats.substack.com//"
+        href="https://arunnats.substack.com/"
         target="_blank"
         rel="noopener noreferrer"
         className="h-5 w-5 rounded-full bg-pink-400 flex items-center justify-center text-white hover:opacity-80 transition"
