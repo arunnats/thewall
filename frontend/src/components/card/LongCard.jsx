@@ -10,7 +10,7 @@ export default function LongCard({ text, rec, date }) {
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="px-3 text-md leading-relaxed font-patrick overflow-x-hidden">
+        <div className="px-3 text-sm leading-relaxed font-patrick overflow-x-hidden">
           <span>{text}</span>
         </div>
       </div>
