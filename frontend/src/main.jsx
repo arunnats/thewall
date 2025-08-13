@@ -7,14 +7,17 @@ import Socials from "./components/overlay/Socials.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="relative h-screen w-screen overflow-hidden">
+    <div
+      className="relative w-screen overflow-x-hidden bg-cover bg-center"
+      style={{ backgroundImage: 'url("/bg3.jpg")' }}
+    >
       <App />
 
-      <div className="absolute bottom-2 left-4 z-10">
+      <div className="fixed bottom-2 left-4 z-10">
         <Socials />
       </div>
 
-      <div className="absolute bottom-1 right-4 z-10">
+      <div className="fixed bottom-1 right-4 z-10">
         <Name />
       </div>
     </div>
