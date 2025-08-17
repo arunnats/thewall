@@ -1,4 +1,4 @@
-export default function LongCard({ text, rec, date }) {
+export default function LongCard({ id, text, rec, date }) {
   return (
     <div className="relative w-[49vw] mb-4">
       <img src="longcard.svg" className="w-full" alt="" />
@@ -7,6 +7,10 @@ export default function LongCard({ text, rec, date }) {
         <span className="px-3 py-1 text-lg font-bold font-patrick">
           To, {rec}
         </span>
+      </div>
+
+      <div className="absolute top-4 right-0">
+        <span className="px-3 py-1 text-lg font-bold font-patrick">#{id}</span>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">

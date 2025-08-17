@@ -1,4 +1,4 @@
-export default function Card({ text, rec, date }) {
+export default function Card({ id, text, rec, date }) {
   return (
     <div className="relative w-[25vw]">
       <img src="card3.svg" className="w-full" alt="" />
@@ -7,6 +7,10 @@ export default function Card({ text, rec, date }) {
         <span className="px-3 py-1 text-lg font-bold font-patrick">
           To, {rec}
         </span>
+      </div>
+
+      <div className="absolute top-16 right-3">
+        <span className="px-3 py-1 text-lg font-bold font-patrick">#{id}</span>
       </div>
 
       <div className="absolute inset-0 flex items-center justify-center">
